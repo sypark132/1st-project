@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>sypark_main.html</title>
+  <script src="https://kit.fontawesome.com/d4b64b084d.js" crossorigin="anonymous"></script> <!-- 메뉴 아이콘 사이트 링크 -->
+  <link rel="stylesheet" href="css/sy_style.css" type="text/css"
+			media="screen and (min-width:783px)">
+  <link rel="stylesheet" href="css/sy_style-1.css" type="text/css"
+			media="screen and (max-width:782px)">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@300&display=swap"													rel="stylesheet"> <!-- 구글폰트 사이트 링크 -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+  <script src="js/sy_myfunction.js" type="text/javascript"></script>
+ </head>
+ <body>
+ <div id="wrap"><!-- 본문 전체 잡아주는 영역 -->
+
+ <!-- navigation -->
+	<nav class="navbar"><!-- pc전용 -->
+		<div class="navbar_logo">
+			<a href="#"><img src="img/kpet_logo (1).png"></a>
+		</div>
+		<ul class="navbar_menu">
+				<li><a href="#">공지사항</a></li>
+				<li><a href="#">예정전시</a></li>
+				<li><a href="#">지난전시</a></li>
+				<li><a href="#">이벤트</a></li>
+		</ul>
+		<div class="navbar_icon">
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+		</div>
+	</nav>
+
+	<section> <!-- section 열어주는 태그 -->
+
+	<!-- article(1) 이미지 슬라이드 -->
+	<div class="cycle-slideshow">
+		<img src="img/슬라이드3.png">
+		<img src="img/슬라이드1.png">
+		<img src="img/슬라이드2.png">
+	</div>
+
+	<!-- article(2) -->
+	<div class="groupshot">
+		<img src="img/케이펫떼샷주인공.png" id="grpmain"><br>
+		<ul>
+			<li><img src="img/떼샷1.jpg" id="grp1"></li>
+			<li><img src="img/떼샷2.jpg" id="grp2"></li>
+			<li><img src="img/떼샷3.jpg" id="grp3"></li>
+			<li><img src="img/떼샷5.jpg" id="grp4"></li>
+		</ul>
+	</div>
+
+	<!-- article(3) 배너1 -->
+		<div class="middlebnr">
+			<a href="#"><img src="img/middlebnr1.png"></a>
+		</div>
+
+	<!-- article(4) 고민 등록 부분 왼쪽 --> 
+	<div class="concern">
+		<div class="art4"> <!-- art(5)와 병렬 배치 -->
+			<h3>수의사와 함께하는 반려지식</h3>
+			<a href="#"><img src="img/그런개말입니다.png"></a>
+		</div>
+	<!-- article(5) 고민 등록 부분 오른쪽 -->
+		<div class="art5">
+			<div class="concern2">
+				<p>한 달에 한 번, 강아지와 관련된 궁금증을 해결합니다.</p>
+					말 못하는 우리 집 강아지의 행동,<br>
+					그 속에 담긴 의미가 궁금하지 않으신가요?<br>
+					어떤 고민이든 ok!<br>	
+					집사님들의 고민 사연을 기다립니다.<br>
+			</div>
+			<form method="post" name="button" class="button">
+					<div id="name">이름 <input type="text" id="name_1" name="name" placeholder="홍길동"></div>
+					<div id="tel">전화번호 <input type="text" id="tel_1" name="tel" placeholder="010-1234-5678"></div>
+					<textarea name="opinion" id="opi" rows="10" cols="30" placeholder="자유롭게 고민을 적어주세요."></textarea><p>
+					<input type="button" id="send" value="보내기" onclick="myfunction()">
+			</form>
+		</div>
+	</div>
+
+	<!-- article(6) 배너2,3 -->
+	<div class="banner2">
+		<a href=""><img src="img/onoff_invitation.png"></a>
+	</div>
+	<div class="banner3">
+		<a href=""><img src="img/kakao_bnr.png"></a> 
+	</div>
+
+	<!-- article(7) 파트너 -->
+	<div id="partner">
+		<img src="img/주관.png">
+		<img src="img/주최.png">
+		<img src="img/파트너병원.png">
+	</div>
+
+	</section><!-- 본문 닫아주는 태그 -->
+
+	<!-- footer -->
+	<footer class="footer">
+		(주)메쎄이상&nbsp;&nbsp;&nbsp;사업자등록번호. 119-86-04944&nbsp;&nbsp;&nbsp;대표자. 조원표&nbsp;&nbsp;&nbsp;
+		주소. 서울특별시 마포구 월드컵북로58길9 (상암동, ES타워)&nbsp;&nbsp;&nbsp;통신판매번호. 2017-서울마포-0270<br>
+		전화.(참관객) 02-6121-6396~8&nbsp;&nbsp;&nbsp;(참가기업) 02-6121-6392~5&nbsp;&nbsp;&nbsp;
+		팩스.02-6455-0953&nbsp;&nbsp;&nbsp;이메일.pet.es@esgroup.net<br>
+		전시기간: 09:00 - 18:00&nbsp;&nbsp;&nbsp;비전시기간: Mon - Fri. 09:00 - 18:00 | Lunch : 12:30 - 13:30 | Sat, Sun & Holiday OFF<br>
+		(사)한국펫사료협회&nbsp;&nbsp;&nbsp;주소. 경기도 하남시 덕풍동 833-1 현대지식산업센터한강미사 A동 3층 35호</p>
+		<p>Copyright(c) 2016. K-PET FAIR. All Right Reserved.</p>
+	</footer>
+
+ </div><!-- wrap태그 닫기 -->
+
+<!-- 모바일 전용 -->
+	<div class="mobile_nav"><img src="img/mobile-1.png"></div>
+	<div class="mobile_bnr"><img src="img/mobile-2.png"></div>
+	<div class="mobile_mid">
+		<img src="img/mobile-3.png">
+		<img src="img/mobile-4.png">
+	</div>
+	<div class="mobile_footer">
+		<img src="img/mobile-5.png">
+		<img src="img/mobile-6.png">
+	</div>
+</body>
+</html>
