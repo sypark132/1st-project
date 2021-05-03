@@ -1,0 +1,9 @@
+/* 태블릿 전용 */
+.navbar,.cycle-slideshow,.groupshot,.middlebnr,.concern,.banner2,.banner3,#partner,.footer {display:none;}
+
+* {margin:0; padding:0;}
+
+img {
+	display:inline-block;
+	width:100%;
+}
